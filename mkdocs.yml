@@ -1,0 +1,48 @@
+site_name: Notes on Reason & Reality
+site_description: A growing collection of ideas, questions, and discoveries across disciplines.
+site_url: https://lucylu-debug.github.io/notes-on-reason-and-reality/
+repo_url: https://github.com/LUCYLU-debug/notes-on-reason-and-reality
+repo_name: LUCYLU-debug/notes-on-reason-and-reality
+site_author: Notes on Reason & Reality
+
+theme:
+  name: material
+  language: en
+  favicon: assets/images/favicon.svg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep orange
+  font:
+    text: DM Sans
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Reading Path: learning-path.md
+  - Part I · Reason & Knowledge:
+      - Reasoning, Evidence & Knowledge: part-i-reason-and-knowledge/reasoning-evidence-knowledge.md
+  - Part II · Formal Limits:
+      - Paradoxes & Incompleteness: part-ii-limits-of-formal-thought/paradoxes-and-formal-limits.md
+  - Part III · Physical Reality:
+      - Relativity & the Structure of Time: part-iii-physical-reality/relativity-and-time.md
+      - Entropy & the Arrow of Time: part-iii-physical-reality/entropy-and-the-arrow-of-time.md
+  - About: about.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+
+extra_css:
+  - assets/stylesheets/extra.css
