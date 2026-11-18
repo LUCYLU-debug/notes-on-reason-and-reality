@@ -238,7 +238,7 @@
   
     
   
-  Reading Path
+  Reading Map
 
       </a>
     </li>
@@ -412,7 +412,7 @@
   <span class="md-ellipsis">
     
   
-    Reading Path
+    Reading Map
   
 
     
@@ -985,9 +985,9 @@
 <blockquote>
 <p>Every mammal is warm-blooded. A whale is a mammal. Therefore, a whale is warm-blooded.</p>
 </blockquote>
-<p>The conclusion follows from the premises. <em>Soundness</em> is a stronger property: the argument must be valid <strong>and</strong> its premises must actually be true. A valid argument with a false premise is not sound, even when its conclusion happens to be true. The standard distinction between deductive and non-deductive inference is set out in OpenStax's <em>Introduction to Philosophy</em>.[^inference]</p>
+<p>The conclusion follows from the premises. <em>Soundness</em> is a stronger property: the argument must be valid <strong>and</strong> its premises must actually be true. A valid argument with a false premise is not sound, even when its conclusion happens to be true. The standard distinction between deductive and non-deductive inference is set out in OpenStax's <em>Introduction to Philosophy</em>.<sup id="fnref:inference"><a class="footnote-ref" href="#fn:inference">1</a></sup></p>
 <p><strong>Induction</strong> moves beyond what the premises logically guarantee. Observations of a pattern may justify expecting that pattern to continue, but do not deductively entail that it will. If a particular instrument has produced stable readings over many trials, another stable reading is reasonable to expect. A changed calibration or a new operating environment could still defeat the prediction.</p>
-<p><strong>Abduction</strong>, often discussed as <em>inference to the best explanation</em>, begins with something to explain and compares candidate accounts of it. If a street is wet, rainfall may be one explanation; a street-cleaning vehicle is another. The observation alone does not select one. Explanatory fit, background information, and possible alternative causes matter.[^abduction]</p>
+<p><strong>Abduction</strong>, often discussed as <em>inference to the best explanation</em>, begins with something to explain and compares candidate accounts of it. If a street is wet, rainfall may be one explanation; a street-cleaning vehicle is another. The observation alone does not select one. Explanatory fit, background information, and possible alternative causes matter.<sup id="fnref:abduction"><a class="footnote-ref" href="#fn:abduction">2</a></sup></p>
 <table>
 <thead>
 <tr>
@@ -1017,23 +1017,23 @@
 <p>These categories describe different <strong>relations between premises and conclusions</strong>. A scientific argument may combine all three: propose an explanation abductively, deduce a prediction from it, and assess the prediction against observations.</p>
 <h2 id="2-can-strong-evidence-fall-short-of-certainty">2. Can strong evidence fall short of certainty?</h2>
 <p>Yes. A piece of evidence can favour a hypothesis without establishing it uniquely. This is not a defect in the evidence; it reflects the difference between <em>support</em> and <em>logical consequence</em>.</p>
-<p>Imagine a signal that is more likely under hypothesis (H) than under its alternative. Observing the signal raises the relative plausibility of (H). But it matters <strong>how much more likely</strong> the signal is under (H), as well as how plausible (H) was beforehand.</p>
+<p>Imagine a signal that is more likely under hypothesis <span class="arithmatex">\(H\)</span> than under its alternative. Observing the signal raises the relative plausibility of <span class="arithmatex">\(H\)</span>. But it matters <strong>how much more likely</strong> the signal is under <span class="arithmatex">\(H\)</span>, as well as how plausible <span class="arithmatex">\(H\)</span> was beforehand.</p>
 <p>Bayes' theorem expresses this precisely:</p>
-<p>[
+<div class="arithmatex">\[
 P(H\mid E)=\frac{P(E\mid H)P(H)}{P(E)}.
-]</p>
-<p>Here (P(H)) is the prior probability, (P(E\mid H)) the likelihood of the evidence under the hypothesis, and (P(H\mid E)) the posterior probability after observing the evidence.[^bayes]</p>
-<p>For an entirely <strong>illustrative</strong>, not empirical, example, suppose (P(H)=0.10), (P(E\mid H)=0.80), and (P(E\mid\neg H)=0.20). Then</p>
-<p>[
+\]</div>
+<p>Here <span class="arithmatex">\(P(H)\)</span> is the prior probability, <span class="arithmatex">\(P(E\mid H)\)</span> the likelihood of the evidence under the hypothesis, and <span class="arithmatex">\(P(H\mid E)\)</span> the posterior probability after observing the evidence.<sup id="fnref:bayes"><a class="footnote-ref" href="#fn:bayes">3</a></sup></p>
+<p>For an entirely <strong>illustrative</strong>, not empirical, example, suppose <span class="arithmatex">\(P(H)=0.10\)</span>, <span class="arithmatex">\(P(E\mid H)=0.80\)</span>, and <span class="arithmatex">\(P(E\mid\neg H)=0.20\)</span>. Then</p>
+<div class="arithmatex">\[
 P(E)=0.80(0.10)+0.20(0.90)=0.26,
 \qquad
 P(H\mid E)=\frac{0.08}{0.26}\approx0.308.
-]</p>
-<p>The signal is four times as likely under (H) as under its alternative, yet the posterior probability of (H) is only about 31%. The example shows why a large likelihood ratio does not, by itself, imply a high posterior probability. The numerical values are hypothetical; their function is to expose the logic of evidence.</p>
-<p>This framework is not a universally accepted solution to every epistemological question. Bayesian approaches require priors and likelihoods, and philosophers disagree about their interpretation and justification. They do, however, make explicit a point that informal reasoning often hides: evidence is evaluated <strong>relative to hypotheses and background assumptions</strong>.[^bayes]</p>
+\]</div>
+<p>The signal is four times as likely under <span class="arithmatex">\(H\)</span> as under its alternative, yet the posterior probability of <span class="arithmatex">\(H\)</span> is only about 31%. The example shows why a large likelihood ratio does not, by itself, imply a high posterior probability. The numerical values are hypothetical; their function is to expose the logic of evidence.</p>
+<p>This framework is not a universally accepted solution to every epistemological question. Bayesian approaches require priors and likelihoods, and philosophers disagree about their interpretation and justification. They do, however, make explicit a point that informal reasoning often hides: evidence is evaluated <strong>relative to hypotheses and background assumptions</strong>.<sup id="fnref2:bayes"><a class="footnote-ref" href="#fn:bayes">3</a></sup></p>
 <h2 id="3-why-doesnt-the-past-prove-the-future">3. Why doesn't the past prove the future?</h2>
 <p>David Hume's <strong>problem of induction</strong> asks what licenses the move from observed regularities to unobserved cases. If the sun has risen every day in recorded experience, what justifies expecting another sunrise? Repetition alone does not make the next event a deductive consequence.</p>
-<p>One possible answer is that nature is generally uniform. But how is <em>that</em> principle justified? It cannot simply be a logical truth: a future unlike the past can be described without contradiction. Defending the principle by pointing to the past reliability of induction appears to rely on the very sort of inference under examination.[^induction]</p>
+<p>One possible answer is that nature is generally uniform. But how is <em>that</em> principle justified? It cannot simply be a logical truth: a future unlike the past can be described without contradiction. Defending the principle by pointing to the past reliability of induction appears to rely on the very sort of inference under examination.<sup id="fnref:induction"><a class="footnote-ref" href="#fn:induction">4</a></sup></p>
 <p>Hume's challenge should not be mistaken for the claim that empirical science is useless. It identifies a <strong>philosophical gap between deductive proof and empirical expectation</strong>. Modern approaches—including probabilistic accounts of confirmation—try to articulate how evidence can support fallible predictions without converting them into logical necessities.</p>
 <p>The practical consequence is sharper than blanket scepticism: a claim may be exceptionally well supported while remaining revisable when new evidence, better measurements, or new competing models appear.</p>
 <h2 id="4-when-is-the-best-explanation-good-enough">4. When is the “best explanation” good enough?</h2>
@@ -1046,11 +1046,11 @@ P(H\mid E)=\frac{0.08}{0.26}\approx0.308.
 <li><strong>Compare with further evidence.</strong> Do new observations favour one account without contradicting its other implications?</li>
 <li><strong>Keep track of auxiliary assumptions.</strong> Predictions may depend on assumptions about measurement, background conditions, or the absence of other influences.</li>
 </ol>
-<p>This is the structure behind many uses of inference to the best explanation. Philosophers debate which virtues—predictive success, coherence, simplicity, unification, explanatory depth—justify preferring one account, and whether the best available explanation is likely to be true. The <strong>best of the explanations considered</strong> need not be the best possible explanation; the relevant hypothesis may have been overlooked.[^abduction]</p>
+<p>This is the structure behind many uses of inference to the best explanation. Philosophers debate which virtues—predictive success, coherence, simplicity, unification, explanatory depth—justify preferring one account, and whether the best available explanation is likely to be true. The <strong>best of the explanations considered</strong> need not be the best possible explanation; the relevant hypothesis may have been overlooked.<sup id="fnref2:abduction"><a class="footnote-ref" href="#fn:abduction">2</a></sup></p>
 <p>The distinction is important: a model can fit known facts while being weakly distinguished from an alternative. An additional observation has evidential value when it changes that comparison, not merely when it repeats something both models already predict.</p>
 <h2 id="5-does-knowledge-require-certainty">5. Does knowledge require certainty?</h2>
-<p>Not in every influential account of knowledge. A traditional philosophical proposal treats knowledge as <strong>justified true belief</strong>: someone knows (p) only if (p) is true, they believe (p), and their belief is justified. That account separates <em>being right</em> from <em>having good grounds</em> for being right.</p>
-<p>The proposal is not the final answer. Gettier-style cases suggest that someone may reach a true, apparently justified belief through a form of epistemic luck. The belief is true and supported, yet something about the way it connects to the fact seems inadequate for knowledge. Contemporary epistemology has developed competing responses; there is no single settled analysis accepted by everyone.[^knowledge]</p>
+<p>Not in every influential account of knowledge. A traditional philosophical proposal treats knowledge as <strong>justified true belief</strong>: someone knows <span class="arithmatex">\(p\)</span> only if <span class="arithmatex">\(p\)</span> is true, they believe <span class="arithmatex">\(p\)</span>, and their belief is justified. That account separates <em>being right</em> from <em>having good grounds</em> for being right.</p>
+<p>The proposal is not the final answer. Gettier-style cases suggest that someone may reach a true, apparently justified belief through a form of epistemic luck. The belief is true and supported, yet something about the way it connects to the fact seems inadequate for knowledge. Contemporary epistemology has developed competing responses; there is no single settled analysis accepted by everyone.<sup id="fnref:knowledge"><a class="footnote-ref" href="#fn:knowledge">5</a></sup></p>
 <p>For the purposes of understanding scientific claims, the lesson is not that certainty is always required. It is that several questions must remain distinct:</p>
 <ul>
 <li><strong>Truth:</strong> Does the claim correspond to the world?</li>
@@ -1070,11 +1070,26 @@ P(H\mid E)=\frac{0.08}{0.26}\approx0.308.
 <li>**“The Analysis of Knowledge,” <em>Stanford Encyclopedia of Philosophy</em>](https://plato.stanford.edu/entries/knowledge-analysis/). Justified true belief and the Gettier problem.</li>
 </ul>
 <p><strong>Optional video:</strong> <a href="https://www.wi-phi.com/videos/">Wireless Philosophy — video library</a> provides introductions to reasoning and epistemology.</p>
-<p>[^inference]: OpenStax, <a href="https://openstax.org/books/introduction-philosophy/pages/5-4-types-of-inferences"><em>Types of Inferences</em></a>.
-[^abduction]: Douven, <a href="https://plato.stanford.edu/entries/abduction/"><em>Abduction</em></a>, especially the general account and debate over its status.
-[^bayes]: <a href="https://plato.stanford.edu/entries/bayes-theorem/"><em>Bayes' Theorem</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.
-[^induction]: <a href="https://plato.stanford.edu/entries/induction-problem/"><em>The Problem of Induction</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.
-[^knowledge]: <a href="https://plato.stanford.edu/entries/knowledge-analysis/"><em>The Analysis of Knowledge</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:inference">
+<p>OpenStax, <a href="https://openstax.org/books/introduction-philosophy/pages/5-4-types-of-inferences"><em>Types of Inferences</em></a>.&#160;<a class="footnote-backref" href="#fnref:inference" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:abduction">
+<p>Douven, <a href="https://plato.stanford.edu/entries/abduction/"><em>Abduction</em></a>, especially the general account and debate over its status.&#160;<a class="footnote-backref" href="#fnref:abduction" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:abduction" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:bayes">
+<p><a href="https://plato.stanford.edu/entries/bayes-theorem/"><em>Bayes' Theorem</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.&#160;<a class="footnote-backref" href="#fnref:bayes" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:bayes" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:induction">
+<p><a href="https://plato.stanford.edu/entries/induction-problem/"><em>The Problem of Induction</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.&#160;<a class="footnote-backref" href="#fnref:induction" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:knowledge">
+<p><a href="https://plato.stanford.edu/entries/knowledge-analysis/"><em>The Analysis of Knowledge</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.&#160;<a class="footnote-backref" href="#fnref:knowledge" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -1134,6 +1149,8 @@ P(H\mid E)=\frac{0.08}{0.26}\approx0.308.
     
     
       <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

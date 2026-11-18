@@ -238,7 +238,7 @@
   
     
   
-  Reading Path
+  Reading Map
 
       </a>
     </li>
@@ -412,7 +412,7 @@
   <span class="md-ellipsis">
     
   
-    Reading Path
+    Reading Map
   
 
     
@@ -1074,53 +1074,53 @@
 <blockquote>
 <p>This sentence is false.</p>
 </blockquote>
-<p>Call it (L). In an ordinary two-valued interpretation, where a sentence must be either true or false, its apparent content leads to the equivalence</p>
-<p>[
+<p>Call it <span class="arithmatex">\(L\)</span>. In an ordinary two-valued interpretation, where a sentence must be either true or false, its apparent content leads to the equivalence</p>
+<div class="arithmatex">\[
 L \text{ is true} \;\Longleftrightarrow\; L \text{ is false}.
-]</p>
-<p>If (L) is true, what it asserts holds, so it is false. If it is false, what it asserts fails to hold, so it is true. Neither straightforward assignment is stable.</p>
+\]</div>
+<p>If <span class="arithmatex">\(L\)</span> is true, what it asserts holds, so it is false. If it is false, what it asserts fails to hold, so it is true. Neither straightforward assignment is stable.</p>
 <p>The difficulty rests on more than <strong>self-reference alone</strong>. A sentence such as “This sentence has five words” refers to itself without generating the same contradiction. The liar combines self-reference with a truth predicate and apparently unrestricted principles linking a sentence's truth to what it says.</p>
-<p>Philosophers and logicians have proposed different responses. <strong>Tarski's approach</strong> distinguishes a language from a richer <em>metalanguage</em> in which truth about the first language can be expressed. On this approach, the relevant truth predicate is not allowed to apply unrestrictedly to sentences of its own language. Other approaches modify the treatment of truth values or the logic governing contradictions. There is no universally accepted resolution to the full family of semantic paradoxes.[^liar]</p>
+<p>Philosophers and logicians have proposed different responses. <strong>Tarski's approach</strong> distinguishes a language from a richer <em>metalanguage</em> in which truth about the first language can be expressed. On this approach, the relevant truth predicate is not allowed to apply unrestrictedly to sentences of its own language. Other approaches modify the treatment of truth values or the logic governing contradictions. There is no universally accepted resolution to the full family of semantic paradoxes.<sup id="fnref:liar"><a class="footnote-ref" href="#fn:liar">1</a></sup></p>
 <p>The important point is not that ordinary language is worthless; it is that a rigorous theory of truth must specify <strong>which sentences can express what about which language</strong>.</p>
 <h2 id="2-how-did-russells-paradox-challenge-set-theory">2. How did Russell's paradox challenge set theory?</h2>
-<p>The problem can be derived rather than merely described. In naïve set theory, an unrestricted comprehension principle says that for any well-defined condition (P(x)), there is a set containing exactly the objects satisfying (P).</p>
+<p>The problem can be derived rather than merely described. In naïve set theory, an unrestricted comprehension principle says that for any well-defined condition <span class="arithmatex">\(P(x)\)</span>, there is a set containing exactly the objects satisfying <span class="arithmatex">\(P\)</span>.</p>
 <p>Now imagine the collection</p>
-<p>[
-R={x \mid x\notin x}.
-]</p>
-<p>It is supposed to contain precisely the sets that are <strong>not</strong> members of themselves. Ask whether (R\in R).</p>
+<div class="arithmatex">\[
+R=\{x \mid x\notin x\}.
+\]</div>
+<p>It is supposed to contain precisely the sets that are <strong>not</strong> members of themselves. Ask whether <span class="arithmatex">\(R\in R\)</span>.</p>
 <ul>
-<li><strong>Suppose (R\in R).</strong> By the rule defining (R), it contains only sets that are not members of themselves. Therefore (R\notin R).</li>
-<li><strong>Suppose (R\notin R).</strong> Then (R) satisfies the defining condition for membership in (R). Therefore (R\in R).</li>
+<li><strong>Suppose <span class="arithmatex">\(R\in R\)</span>.</strong> By the rule defining <span class="arithmatex">\(R\)</span>, it contains only sets that are not members of themselves. Therefore <span class="arithmatex">\(R\notin R\)</span>.</li>
+<li><strong>Suppose <span class="arithmatex">\(R\notin R\)</span>.</strong> Then <span class="arithmatex">\(R\)</span> satisfies the defining condition for membership in <span class="arithmatex">\(R\)</span>. Therefore <span class="arithmatex">\(R\in R\)</span>.</li>
 </ul>
-<p>Either assumption produces its opposite. The contradiction does not show that the argument is badly executed. It shows that the unrestricted set-existence principle cannot be maintained alongside the usual classical reasoning about membership.[^russell]</p>
+<p>Either assumption produces its opposite. The contradiction does not show that the argument is badly executed. It shows that the unrestricted set-existence principle cannot be maintained alongside the usual classical reasoning about membership.<sup id="fnref:russell"><a class="footnote-ref" href="#fn:russell">2</a></sup></p>
 <h3 id="what-changed-after-russell">What changed after Russell?</h3>
 <p>One response is to <strong>restrict which collections count as sets</strong>. In standard Zermelo–Fraenkel set theory (ZF, or ZFC with the axiom of choice), separation forms subsets of an already given set; it does not license the existence of an unrestricted set of <em>all</em> objects meeting an arbitrary condition. This blocks Russell's construction as a universal set.</p>
-<p>Other foundational approaches, including type theories, restrict the kinds of objects that may stand in membership-like relations. The variety of responses matters: the paradox does not uniquely dictate one replacement foundation.[^russell]</p>
+<p>Other foundational approaches, including type theories, restrict the kinds of objects that may stand in membership-like relations. The variety of responses matters: the paradox does not uniquely dictate one replacement foundation.<sup id="fnref2:russell"><a class="footnote-ref" href="#fn:russell">2</a></sup></p>
 <div class="chapter-callout"><strong>A distinction worth keeping</strong>Russell's paradox exposes inconsistency in a particular unrestricted principle of set formation. It does not establish that modern axiomatic set theory is inconsistent.</div>
 
 <h2 id="3-what-did-godel-actually-prove">3. What did Gödel actually prove?</h2>
-<p>A <strong>formal theory</strong> specifies a language, axioms, and rules for deriving theorems. It is <em>consistent</em> if it does not prove a contradiction. It is <em>complete</em> in the relevant syntactic sense if, for every sentence (\varphi) in its language, it proves either (\varphi) or its negation.</p>
+<p>A <strong>formal theory</strong> specifies a language, axioms, and rules for deriving theorems. It is <em>consistent</em> if it does not prove a contradiction. It is <em>complete</em> in the relevant syntactic sense if, for every sentence <span class="arithmatex">\(\varphi\)</span> in its language, it proves either <span class="arithmatex">\(\varphi\)</span> or its negation.</p>
 <p>Gödel's <strong>first incompleteness theorem</strong>, in a standard modern formulation, concerns theories that meet three central conditions:</p>
 <ol>
 <li>They are <strong>consistent</strong>.</li>
 <li>Their axioms are <strong>effectively enumerable</strong>: there is a computable procedure for listing them.</li>
-<li>They can express enough elementary arithmetic (for example, they extend a system at least as strong as Robinson arithmetic (Q)).</li>
+<li>They can express enough elementary arithmetic (for example, they extend a system at least as strong as Robinson arithmetic <span class="arithmatex">\(Q\)</span>).</li>
 </ol>
-<p>Such a theory cannot decide every arithmetical sentence. There is a sentence (\varphi) for which neither (\varphi) nor (\neg\varphi) is provable within the theory. This is a limitation of what can be simultaneously secured by those conditions, not a claim that mathematical proof as such has failed.[^goedel]</p>
+<p>Such a theory cannot decide every arithmetical sentence. There is a sentence <span class="arithmatex">\(\varphi\)</span> for which neither <span class="arithmatex">\(\varphi\)</span> nor <span class="arithmatex">\(\neg\varphi\)</span> is provable within the theory. This is a limitation of what can be simultaneously secured by those conditions, not a claim that mathematical proof as such has failed.<sup id="fnref:goedel"><a class="footnote-ref" href="#fn:goedel">3</a></sup></p>
 <h3 id="why-does-arithmetic-allow-a-statement-about-proofs">Why does arithmetic allow a statement about proofs?</h3>
-<p>The surprising move is <strong>arithmetisation</strong>. Symbols, formulas, and finite proofs can be encoded by natural numbers, so that claims about formal proofs become arithmetical claims. Through a diagonal or fixed-point construction, a sentence (G) can be made to express, in effect, that (G) is not provable in the theory.</p>
+<p>The surprising move is <strong>arithmetisation</strong>. Symbols, formulas, and finite proofs can be encoded by natural numbers, so that claims about formal proofs become arithmetical claims. Through a diagonal or fixed-point construction, a sentence <span class="arithmatex">\(G\)</span> can be made to express, in effect, that <span class="arithmatex">\(G\)</span> is not provable in the theory.</p>
 <p>A simplified line of reasoning is instructive:</p>
 <ul>
-<li>If a consistent theory proved (G), the encoded claim of unprovability would be false in the way the construction describes; this creates a contradiction.</li>
-<li>Establishing that the theory also cannot prove (\neg G) requires additional care. Gödel's original argument used a stronger consistency condition; later refinements, including Rosser's, obtain the familiar incompleteness conclusion from ordinary consistency under the standard effective and arithmetic assumptions.</li>
+<li>If a consistent theory proved <span class="arithmatex">\(G\)</span>, the encoded claim of unprovability would be false in the way the construction describes; this creates a contradiction.</li>
+<li>Establishing that the theory also cannot prove <span class="arithmatex">\(\neg G\)</span> requires additional care. Gödel's original argument used a stronger consistency condition; later refinements, including Rosser's, obtain the familiar incompleteness conclusion from ordinary consistency under the standard effective and arithmetic assumptions.</li>
 </ul>
-<p>This is a sketch of the architecture, <strong>not</strong> a substitute for the formal proof. The precise arithmetical predicates and assumptions are indispensable to a rigorous theorem statement.[^goedel]</p>
+<p>This is a sketch of the architecture, <strong>not</strong> a substitute for the formal proof. The precise arithmetical predicates and assumptions are indispensable to a rigorous theorem statement.<sup id="fnref2:goedel"><a class="footnote-ref" href="#fn:goedel">3</a></sup></p>
 <h3 id="does-the-theorem-mean-that-truth-exceeds-proof">Does the theorem mean that truth exceeds proof?</h3>
 <p>For a fixed, sound formal arithmetic theory, there are true statements of arithmetic not provable <strong>in that theory</strong>. But the qualifiers matter. The theorem does not provide a mechanical way to recognise every arithmetical truth, nor does it license the unqualified claim that “humans can see truths no machine can”.</p>
-<p>It is also important to separate Gödel's <strong>incompleteness theorem for arithmetic theories</strong> from his <strong>completeness theorem for first-order logic</strong>. The latter states that every logically valid first-order formula is derivable in an appropriate sound and complete proof calculus. These theorems answer different questions: one about logical consequence across models, the other about what a particular theory can decide.[^goedel]</p>
+<p>It is also important to separate Gödel's <strong>incompleteness theorem for arithmetic theories</strong> from his <strong>completeness theorem for first-order logic</strong>. The latter states that every logically valid first-order formula is derivable in an appropriate sound and complete proof calculus. These theorems answer different questions: one about logical consequence across models, the other about what a particular theory can decide.<sup id="fnref3:goedel"><a class="footnote-ref" href="#fn:goedel">3</a></sup></p>
 <h2 id="4-can-a-system-prove-its-own-consistency">4. Can a system prove its own consistency?</h2>
-<p>Gödel's <strong>second incompleteness theorem</strong> strengthens the result. Under suitable conditions on a consistent, effectively axiomatised theory capable of representing enough arithmetic and its own proof relation, the theory cannot prove a suitably formalised statement of its <strong>own consistency</strong>.[^goedel]</p>
+<p>Gödel's <strong>second incompleteness theorem</strong> strengthens the result. Under suitable conditions on a consistent, effectively axiomatised theory capable of representing enough arithmetic and its own proof relation, the theory cannot prove a suitably formalised statement of its <strong>own consistency</strong>.<sup id="fnref4:goedel"><a class="footnote-ref" href="#fn:goedel">3</a></sup></p>
 <p>This does <strong>not</strong> mean that consistency can never be studied or supported by mathematics. A stronger theory can sometimes prove the consistency of a weaker one. Such a proof carries assumptions from the stronger theory; it does not make those assumptions disappear.</p>
 <p>The result speaks to Hilbert's programme of grounding mathematics in secure formal procedures. It shows that an especially ambitious version of the programme cannot succeed in the simple form originally hoped for, while leaving a broad and productive role for formal proof.</p>
 <h2 id="5-where-do-these-results-stop">5. Where do these results stop?</h2>
@@ -1139,9 +1139,20 @@ R={x \mid x\notin x}.
 <li><strong>“Set Theory,” <em>Stanford Encyclopedia of Philosophy</em>.</strong> <a href="https://plato.stanford.edu/entries/set-theory/">Read the entry</a>. Axiomatic approaches to sets and logical completeness.</li>
 </ul>
 <p><strong>Optional lecture:</strong> <a href="https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/lecture-11-recursion-theorem-and-logic/">MIT OpenCourseWare — Recursion Theorem and Logic</a>. A more technical account of the relationship between computability and incompleteness.</p>
-<p>[^liar]: <a href="https://plato.stanford.edu/entries/liar-paradox/"><em>Liar Paradox</em></a> and <a href="https://plato.stanford.edu/entries/self-reference/"><em>Self-Reference and Paradox</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.
-[^russell]: <a href="https://plato.stanford.edu/entries/russell-paradox/"><em>Russell's Paradox</em></a> and <a href="https://plato.stanford.edu/entries/set-theory/"><em>Set Theory</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.
-[^goedel]: <a href="https://plato.stanford.edu/entries/goedel-incompleteness/"><em>Gödel's Incompleteness Theorems</em></a>, <em>Stanford Encyclopedia of Philosophy</em>, especially the qualified theorem statements and Rosser's refinement.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:liar">
+<p><a href="https://plato.stanford.edu/entries/liar-paradox/"><em>Liar Paradox</em></a> and <a href="https://plato.stanford.edu/entries/self-reference/"><em>Self-Reference and Paradox</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.&#160;<a class="footnote-backref" href="#fnref:liar" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:russell">
+<p><a href="https://plato.stanford.edu/entries/russell-paradox/"><em>Russell's Paradox</em></a> and <a href="https://plato.stanford.edu/entries/set-theory/"><em>Set Theory</em></a>, <em>Stanford Encyclopedia of Philosophy</em>.&#160;<a class="footnote-backref" href="#fnref:russell" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:russell" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:goedel">
+<p><a href="https://plato.stanford.edu/entries/goedel-incompleteness/"><em>Gödel's Incompleteness Theorems</em></a>, <em>Stanford Encyclopedia of Philosophy</em>, especially the qualified theorem statements and Rosser's refinement.&#160;<a class="footnote-backref" href="#fnref:goedel" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:goedel" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:goedel" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:goedel" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -1201,6 +1212,8 @@ R={x \mid x\notin x}.
     
     
       <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

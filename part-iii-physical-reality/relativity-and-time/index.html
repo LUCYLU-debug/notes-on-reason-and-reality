@@ -238,7 +238,7 @@
   
     
   
-  Reading Path
+  Reading Map
 
       </a>
     </li>
@@ -412,7 +412,7 @@
   <span class="md-ellipsis">
     
   
-    Reading Path
+    Reading Map
   
 
     
@@ -984,59 +984,59 @@
 <p>Its starting points are:</p>
 <ol>
 <li><strong>The principle of relativity:</strong> the laws of physics have the same form in all inertial reference frames.</li>
-<li><strong>The invariance of the speed of light in vacuum:</strong> every inertial observer measures the same vacuum light speed (c), regardless of the relative motion of source and observer.</li>
+<li><strong>The invariance of the speed of light in vacuum:</strong> every inertial observer measures the same vacuum light speed <span class="arithmatex">\(c\)</span>, regardless of the relative motion of source and observer.</li>
 </ol>
-<p>These principles are supported by experiment and lead to Lorentz transformations in place of the Galilean transformations of classical mechanics. Special relativity addresses the physics of inertial frames in flat spacetime; gravitation and curved spacetime belong to the later, more general theory.[^openstax-sim][^mit-course]</p>
+<p>These principles are supported by experiment and lead to Lorentz transformations in place of the Galilean transformations of classical mechanics. Special relativity addresses the physics of inertial frames in flat spacetime; gravitation and curved spacetime belong to the later, more general theory.<sup id="fnref:openstax-sim"><a class="footnote-ref" href="#fn:openstax-sim">1</a></sup><sup id="fnref:mit-course"><a class="footnote-ref" href="#fn:mit-course">4</a></sup></p>
 <p>A surprising consequence is that observers cannot preserve <strong>both</strong> a common absolute time and an invariant speed of light while maintaining the usual structure of inertial reference frames. The measurements of space and time must transform together.</p>
 <h2 id="2-can-observers-disagree-about-which-events-are-simultaneous">2. Can observers disagree about which events are simultaneous?</h2>
 <p><strong>Yes, if the events occur at different places and are sufficiently separated in spacetime.</strong> The crucial issue is not simply which flash of light an observer <em>sees first</em>. Light takes time to travel, and careful observers correct for that delay using clocks synchronised within their own frame.</p>
-<p>Let two events have a separation ((\Delta t,\Delta x)) in inertial frame (S). For frame (S') moving at speed (v) along the (x)-axis, the Lorentz transformation gives</p>
-<p>[
+<p>Let two events have a separation <span class="arithmatex">\((\Delta t,\Delta x)\)</span> in inertial frame <span class="arithmatex">\(S\)</span>. For frame <span class="arithmatex">\(S'\)</span> moving at speed <span class="arithmatex">\(v\)</span> along the <span class="arithmatex">\(x\)</span>-axis, the Lorentz transformation gives</p>
+<div class="arithmatex">\[
 \Delta t'=\gamma\left(\Delta t-\frac{v\Delta x}{c^2}\right),
 \qquad
 \gamma=\frac{1}{\sqrt{1-v^2/c^2}}.
-]</p>
-<p>If the events are simultaneous in (S), then (\Delta t=0). But when (\Delta x\neq0) and (v\neq0),</p>
-<p>[
+\]</div>
+<p>If the events are simultaneous in <span class="arithmatex">\(S\)</span>, then <span class="arithmatex">\(\Delta t=0\)</span>. But when <span class="arithmatex">\(\Delta x\neq0\)</span> and <span class="arithmatex">\(v\neq0\)</span>,</p>
+<div class="arithmatex">\[
 \Delta t'=-\gamma\frac{v\Delta x}{c^2}\neq0.
-]</p>
-<p>The events are therefore <strong>not simultaneous</strong> in (S'). Both frames use internally consistent clock conventions and the same physical laws.[^openstax-sim]</p>
+\]</div>
+<p>The events are therefore <strong>not simultaneous</strong> in <span class="arithmatex">\(S'\)</span>. Both frames use internally consistent clock conventions and the same physical laws.<sup id="fnref2:openstax-sim"><a class="footnote-ref" href="#fn:openstax-sim">1</a></sup></p>
 <p>There is an essential boundary to this result. For events that can causally influence one another—that is, events separated by a timelike or lightlike interval—their causal order cannot be reversed by changing inertial frames. Reversals of temporal ordering are possible for <em>spacelike-separated</em> events, which cannot exchange signals at or below the speed of light. Relativity does not make cause and effect arbitrary.</p>
-<p>Einstein Online's account of <a href="https://www.einstein-online.info/en/spotlight/now/">how “now” is defined</a> explains why operational clock synchronisation matters.[^einstein]</p>
+<p>Einstein Online's account of <a href="https://www.einstein-online.info/en/spotlight/now/">how “now” is defined</a> explains why operational clock synchronisation matters.<sup id="fnref:einstein"><a class="footnote-ref" href="#fn:einstein">3</a></sup></p>
 <h2 id="3-why-does-a-moving-clock-accumulate-less-time">3. Why does a moving clock accumulate less time?</h2>
-<p>A <strong>light clock</strong> offers a geometrical derivation. Imagine light bouncing vertically between two mirrors separated by a fixed distance (L) in the clock's own rest frame. A complete round trip takes</p>
-<p>[
+<p>A <strong>light clock</strong> offers a geometrical derivation. Imagine light bouncing vertically between two mirrors separated by a fixed distance <span class="arithmatex">\(L\)</span> in the clock's own rest frame. A complete round trip takes</p>
+<div class="arithmatex">\[
 \Delta\tau=\frac{2L}{c}.
-]</p>
-<p>Here (\Delta\tau) is the <strong>proper time</strong>: the interval recorded by the clock that is present at both the departure and return events.</p>
-<p>Now examine the same clock from a frame in which it moves horizontally at speed (v). During each half-trip, the light follows a longer diagonal path. The invariance of the light speed gives, from the right triangle,</p>
-<p>[
+\]</div>
+<p>Here <span class="arithmatex">\(\Delta\tau\)</span> is the <strong>proper time</strong>: the interval recorded by the clock that is present at both the departure and return events.</p>
+<p>Now examine the same clock from a frame in which it moves horizontally at speed <span class="arithmatex">\(v\)</span>. During each half-trip, the light follows a longer diagonal path. The invariance of the light speed gives, from the right triangle,</p>
+<div class="arithmatex">\[
 \left(\frac{c\Delta t}{2}\right)^2
 =
 L^2+\left(\frac{v\Delta t}{2}\right)^2.
-]</p>
-<p>Using (L=c\Delta\tau/2) and rearranging yields</p>
-<p>[
+\]</div>
+<p>Using <span class="arithmatex">\(L=c\Delta\tau/2\)</span> and rearranging yields</p>
+<div class="arithmatex">\[
 \boxed{\Delta t=\gamma\Delta\tau
 =\frac{\Delta\tau}{\sqrt{1-v^2/c^2}}.}
-]</p>
-<p>For any nonzero relative speed less than (c), (\gamma&gt;1). Thus the interval between the two clock events is longer in the frame where that clock is moving than the proper time measured by the clock itself.[^openstax-dilation]</p>
-<p>Consider a numerical illustration: a craft moves at (0.8c) relative to Earth, and an onboard clock records <strong>30 minutes</strong> between two events at the same place on the craft. Then</p>
-<p>[
+\]</div>
+<p>For any nonzero relative speed less than <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(\gamma&gt;1\)</span>. Thus the interval between the two clock events is longer in the frame where that clock is moving than the proper time measured by the clock itself.<sup id="fnref:openstax-dilation"><a class="footnote-ref" href="#fn:openstax-dilation">2</a></sup></p>
+<p>Consider a numerical illustration: a craft moves at <span class="arithmatex">\(0.8c\)</span> relative to Earth, and an onboard clock records <strong>30 minutes</strong> between two events at the same place on the craft. Then</p>
+<div class="arithmatex">\[
 \gamma=\frac{1}{\sqrt{1-0.8^2}}=\frac53,
 \qquad
 \Delta t=\frac53(30)=50\text{ minutes}.
-]</p>
+\]</div>
 <p>The 30 minutes is proper time for the craft clock; 50 minutes is the Earth-frame coordinate-time separation for those same events. Neither number is evidence of a faulty clock, and the calculation does not establish a privileged stationary frame.</p>
-<p>The conclusion concerns clock readings and spacetime geometry, not merely an optical illusion. Measurements of fast-moving unstable particles, such as atmospheric muons, provide empirical support for time dilation.[^openstax-dilation]</p>
+<p>The conclusion concerns clock readings and spacetime geometry, not merely an optical illusion. Measurements of fast-moving unstable particles, such as atmospheric muons, provide empirical support for time dilation.<sup id="fnref2:openstax-dilation"><a class="footnote-ref" href="#fn:openstax-dilation">2</a></sup></p>
 <h2 id="4-what-remains-invariant-when-measurements-change">4. What remains invariant when measurements change?</h2>
 <p>Relativity does <strong>not</strong> imply that every statement about time and space is subjective. Coordinate differences can change across frames while particular spacetime quantities remain invariant.</p>
 <p>For two events separated along one spatial dimension, the squared interval can be written (with a time-positive sign convention) as</p>
-<p>[
+<div class="arithmatex">\[
 s^2=c^2\Delta t^2-\Delta x^2.
-]</p>
-<p>Its value is the same in all inertial frames, even though (\Delta t) and (\Delta x) individually transform. In three dimensions the expression includes the corresponding differences in (y) and (z).</p>
-<p>For a timelike separation, the proper time between events along an inertial clock's worldline is related to that invariant interval by (c^2\Delta\tau^2=s^2). More generally, a physical clock accumulates proper time along <strong>its actual worldline</strong>, including when that worldline is accelerated. This is the quantity clocks physically register.</p>
+\]</div>
+<p>Its value is the same in all inertial frames, even though <span class="arithmatex">\(\Delta t\)</span> and <span class="arithmatex">\(\Delta x\)</span> individually transform. In three dimensions the expression includes the corresponding differences in <span class="arithmatex">\(y\)</span> and <span class="arithmatex">\(z\)</span>.</p>
+<p>For a timelike separation, the proper time between events along an inertial clock's worldline is related to that invariant interval by <span class="arithmatex">\(c^2\Delta\tau^2=s^2\)</span>. More generally, a physical clock accumulates proper time along <strong>its actual worldline</strong>, including when that worldline is accelerated. This is the quantity clocks physically register.</p>
 <p>A useful summary is therefore:</p>
 <table>
 <thead>
@@ -1048,7 +1048,7 @@ s^2=c^2\Delta t^2-\Delta x^2.
 <tbody>
 <tr>
 <td>Coordinate time assigned to distant events</td>
-<td>Vacuum light speed (c)</td>
+<td>Vacuum light speed <span class="arithmatex">\(c\)</span></td>
 </tr>
 <tr>
 <td>Whether spacelike-separated events are simultaneous</td>
@@ -1064,7 +1064,7 @@ s^2=c^2\Delta t^2-\Delta x^2.
 </tr>
 </tbody>
 </table>
-<p>The last distinction explains why the so-called <em>twin paradox</em> is not a logical contradiction. Two twins who separate and reunite can have followed different worldlines and accumulated different amounts of proper time. The situation is not symmetric in the way two inertial observers merely passing one another are; the reunion comparison concerns whole paths through spacetime.[^openstax-dilation]</p>
+<p>The last distinction explains why the so-called <em>twin paradox</em> is not a logical contradiction. Two twins who separate and reunite can have followed different worldlines and accumulated different amounts of proper time. The situation is not symmetric in the way two inertial observers merely passing one another are; the reunion comparison concerns whole paths through spacetime.<sup id="fnref3:openstax-dilation"><a class="footnote-ref" href="#fn:openstax-dilation">2</a></sup></p>
 <h2 id="5-does-relativity-abolish-the-present">5. Does relativity abolish the present?</h2>
 <p>It challenges the idea of a <strong>single, observer-independent slicing of distant events into a universal “now.”</strong> The relativity of simultaneity shows that distinct inertial frames generally assign different sets of distant events the same coordinate time.</p>
 <p>That is a physical conclusion. Stronger philosophical claims—that the flow of time is unreal, that all events are equally real in a particular metaphysical sense, or that human experience is illusory—require further arguments. Special relativity alone does not settle every debate about temporal experience or the metaphysics of time.</p>
@@ -1079,10 +1079,23 @@ s^2=c^2\Delta t^2-\Delta x^2.
 <li><strong>MIT OpenCourseWare</strong>, <a href="https://ocw.mit.edu/courses/8-20-introduction-to-special-relativity-january-iap-2021/"><em>Introduction to Special Relativity</em></a>. A university-level course covering Lorentz transformations, time dilation, and spacetime diagrams.</li>
 </ul>
 <p><strong>Watch:</strong> <a href="https://ocw.mit.edu/courses/8-20-introduction-to-special-relativity-january-iap-2021/resources/lecture-4/">MIT OCW — Lecture 4.1: Time Dilation</a> and the <a href="https://ocw.mit.edu/courses/8-20-introduction-to-special-relativity-january-iap-2021/resources/lecture-videos/">video lecture index</a> for simultaneity and invariance.</p>
-<p>[^openstax-sim]: OpenStax, <a href="https://openstax.org/books/university-physics-volume-3/pages/5-2-relativity-of-simultaneity"><em>Relativity of Simultaneity</em></a>.
-[^openstax-dilation]: OpenStax, <a href="https://openstax.org/books/university-physics-volume-3/pages/5-3-time-dilation"><em>Time Dilation</em></a>.
-[^einstein]: Pössel, <a href="https://www.einstein-online.info/en/spotlight/now/"><em>The definition of “now”</em></a>, Einstein Online.
-[^mit-course]: MIT OpenCourseWare, <a href="https://ocw.mit.edu/courses/8-20-introduction-to-special-relativity-january-iap-2021/"><em>Introduction to Special Relativity</em></a>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:openstax-sim">
+<p>OpenStax, <a href="https://openstax.org/books/university-physics-volume-3/pages/5-2-relativity-of-simultaneity"><em>Relativity of Simultaneity</em></a>.&#160;<a class="footnote-backref" href="#fnref:openstax-sim" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:openstax-sim" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:openstax-dilation">
+<p>OpenStax, <a href="https://openstax.org/books/university-physics-volume-3/pages/5-3-time-dilation"><em>Time Dilation</em></a>.&#160;<a class="footnote-backref" href="#fnref:openstax-dilation" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:openstax-dilation" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:openstax-dilation" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:einstein">
+<p>Pössel, <a href="https://www.einstein-online.info/en/spotlight/now/"><em>The definition of “now”</em></a>, Einstein Online.&#160;<a class="footnote-backref" href="#fnref:einstein" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:mit-course">
+<p>MIT OpenCourseWare, <a href="https://ocw.mit.edu/courses/8-20-introduction-to-special-relativity-january-iap-2021/"><em>Introduction to Special Relativity</em></a>.&#160;<a class="footnote-backref" href="#fnref:mit-course" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -1142,6 +1155,8 @@ s^2=c^2\Delta t^2-\Delta x^2.
     
     
       <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
