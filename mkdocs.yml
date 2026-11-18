@@ -25,7 +25,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Reading Path: learning-path.md
+  - Reading Map: learning-path.md
   - Part I · Reason & Knowledge:
       - Reasoning, Evidence & Knowledge: part-i-reason-and-knowledge/reasoning-evidence-knowledge.md
   - Part II · Formal Limits:
@@ -39,10 +39,14 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
+  - footnotes
   - admonition
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.superfences
 
 extra_css:
   - assets/stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
