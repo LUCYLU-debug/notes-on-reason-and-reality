@@ -97,6 +97,12 @@ For the purposes of understanding scientific claims, the lesson is not that cert
 
 <div class="chapter-callout"><strong>Where the argument leads</strong>Good reasoning does not eliminate uncertainty. It makes the source and limits of a conclusion visible. Deduction identifies what is entailed; empirical inference explains why a conclusion deserves confidence without pretending that confidence is proof.</div>
 
+## 6. A contemporary application: AI-generated knowledge
+
+Generative AI makes the distinction between **a persuasive explanation** and **a justified belief** especially urgent. A system can produce a fluent answer, cite an irrelevant source or confidently state a falsehood. The National Institute of Standards and Technology discusses this risk in its [Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence).
+
+The questions developed in this chapter still apply: What is the claim? What supports it? Could other explanations fit the same evidence? What would count against it? The companion essay, [Thinking With AI Without Giving Up Judgement](../part-v-intelligence-and-judgement/ai-and-independent-thought.md), follows those questions into AI-assisted work and learning.
+
 ## Sources and further reading
 
 The discussion is a synthesis of the references below. Links lead to the original publishers, not to reproduced chapters.
