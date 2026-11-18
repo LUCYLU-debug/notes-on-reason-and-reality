@@ -2,39 +2,42 @@
 
 A growing collection of ideas, questions, and discoveries across disciplines.
 
-**[Read online](https://lucylu-debug.github.io/notes-on-reason-and-reality/)** · **[The reading path](docs/learning-path.md)** · **[Chapter 01](docs/part-i-reason-and-knowledge/reasoning-evidence-knowledge.md)** · **[Chapter 02](docs/part-ii-limits-of-formal-thought/paradoxes-and-formal-limits.md)** · **[Chapter 03](docs/part-iii-physical-reality/relativity-and-time.md)** · **[Chapter 04](docs/part-iii-physical-reality/entropy-and-the-arrow-of-time.md)**
+**[Read the book](https://lucylu-debug.github.io/notes-on-reason-and-reality/)** · **[Reading map](docs/learning-path.md)**
 
 ![Abstract cover illustration](docs/assets/images/hero.svg)
 
-Four chapters, two hours each. A fifth, two-hour synthesis session brings the ideas together. Every chapter includes questions, a reading plan, a small exercise, and carefully chosen open resources.
+*Notes on Reason & Reality* is a public, illustrated book in progress. Each chapter begins with a question and follows the argument towards an answer: the necessary concepts, the reasoning behind the conclusion, and the limits of what can be established. References to books, academic encyclopedias, open textbooks, and lectures accompany the relevant claims.
 
-| Part | Chapter | Key question |
+The current chapters follow one connected route through four subjects:
+
+| Part | Chapter | Question |
 | --- | --- | --- |
-| Reason & Knowledge | 01 — Reasoning, Evidence & Knowledge | When does evidence justify belief? |
-| Limits of Formal Thought | 02 — Paradoxes & Incompleteness | What can formal reasoning establish? |
-| Physical Reality | 03 — Relativity & the Structure of Time | Is time the same for everyone? |
-| Physical Reality | 04 — Entropy & the Arrow of Time | Why do physical processes have a preferred direction? |
+| I · Reason & Knowledge | [Reasoning, Evidence & Knowledge](docs/part-i-reason-and-knowledge/reasoning-evidence-knowledge.md) | When does evidence justify belief? |
+| II · Limits of Formal Thought | [Paradoxes & Incompleteness](docs/part-ii-limits-of-formal-thought/paradoxes-and-formal-limits.md) | What can formal reasoning establish? |
+| III · Physical Reality | [Relativity & the Structure of Time](docs/part-iii-physical-reality/relativity-and-time.md) | Is time the same for everyone? |
+| III · Physical Reality | [Entropy & the Arrow of Time](docs/part-iii-physical-reality/entropy-and-the-arrow-of-time.md) | Why do physical processes have a preferred direction? |
 
-## Read the book locally
+## Reading and references
 
-Install Python 3.10 or later, then run:
+The chapters stand on their own; the [reading map](docs/learning-path.md) explains the connections between them. Each includes a reasoned account and a **Sources and further reading** section. Some references are conceptual introductions, while others provide formal arguments and a fuller discussion of disagreements.
+
+The text is a synthesis, not a reproduction of the linked works. Mathematical statements are presented with their assumptions, and unsettled philosophical issues are identified as such.
+
+## Running the site locally
+
+With Python 3.10 or later:
 
 ```bash
 python -m pip install -r requirements.txt
 mkdocs serve
 ```
 
-Open `http://127.0.0.1:8000/` in your browser.
+Open `http://127.0.0.1:8000/` in a browser.
 
-## Publish on GitHub Pages
+## Publishing
 
-1. Create a **public** GitHub repository and push these files to its `main` branch.
-2. The included GitHub Actions workflow builds the book and publishes it to the `gh-pages` branch.
-3. In the repository settings, open **Pages**, set **Source** to **Deploy from a branch**, and select `gh-pages` / `/ (root)`.
-4. Once the workflow and Pages deployment have succeeded, the site is available at the URL shown in the Pages settings.
+The GitHub Actions workflow builds the MkDocs site on changes to `main` and pushes the output to `gh-pages`. In GitHub **Settings → Pages**, select **Deploy from a branch**, then `gh-pages` / `/(root)`. The public site is linked above.
 
-For deployment behind a repository subpath, all book navigation and local assets use relative links. You can add `site_url` in `mkdocs.yml` once the live address is known.
+## Scope and future chapters
 
-## Editorial notes
-
-This is a reading guide, not a comprehensive textbook. The planned sequence is one route through the subjects; future volumes may extend to philosophy of science, mind, and mathematics. Original illustrations live in `docs/assets/images/` and are available under the repository's MIT licence. External linked resources remain the property of their respective publishers.
+The structure is deliberately open: philosophy of science, probability, mathematics, mind, language, and ethics can enter as new parts without changing the existing sequence. Original SVG artwork is stored in `docs/assets/images/`; external sources retain their own rights.
